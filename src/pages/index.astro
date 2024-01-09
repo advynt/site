@@ -1,22 +1,31 @@
 ---
 import Layout from '../layouts/Base.astro';
+import { Image } from "astro:assets";
+import logo from "@assets/advynt.png";
 ---
 
-<Layout title="Manual">
+<Layout title="Advynt">
 	<main>
     <div class="max-w-6xl mx-auto dark:text-white md:py-32 md:flex">
       <div class="p-8 md:w-1/2">
         <h1 class="text-6xl font-bold my-4">Advynt</h1>
         <p class="text-2xl my-8">
-          Build <b class="text-green-600 dark:text-green-400">robust</b>, <b class="text-green-600 dark:text-green-400">modern</b> documentation sites with the Manual theme.
+          A tabletop role playing game.
         </p>
-        <a href="/docs/get-started/introduction/" class="inline-block bg-green-700 hover:bg-green-800 text-white text-lg font-bold py-2 px-4 rounded">
+        <a href="/docs/create/blood/" class="inline-block bg-green-700 hover:bg-green-800 text-white text-lg font-bold py-2 px-4 rounded">
           GET STARTED
         </a>
       </div>
       <!-- favicon -->
-      <div class="w-full p-8 md:w-1/2 ">
-        <img src="" alt="">
+      <div class="w-64">
+        <Image
+            class="mb-2 w-full rounded"
+            src={logo}
+            alt={"Advynt Logo"}
+            width={1280}
+            height={1280}
+            format="webp"
+          />
       </div>
     </div>
 
@@ -28,7 +37,7 @@ import Layout from '../layouts/Base.astro';
           <p>
             Advynt is a tabletop game system created by Tristan Ross for stories of swords and sorcery to be played with friends. The system takes inspiration from many others, dating back our first exposure to tabletop games as kids at summer camp. It is a constant work in progress, so differences in page publishing or placeholder information should be expected.
           </p>
-          <br
+          <br>
           <p>
             The best place to start would be Create where players are introduced to the method for creating a Level 1 Advynt Avatar, which players can use to inhabit the Realm of Empyra with the help of a Game Master. Currently the game aims to be fully functional for levels 1 through 3 with plans for levels 4 through 10 in the future.
           </p>
